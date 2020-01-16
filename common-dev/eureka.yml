@@ -1,8 +1,6 @@
 spring:
   application:
     name: eureka-server #服务应用名称
-  profiles:
-    active: server1
 eureka:
   environment: work
   server:

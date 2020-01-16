@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: consumer #服务应用名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:7001/eureka/
