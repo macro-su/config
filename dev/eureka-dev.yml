@@ -1,5 +1,6 @@
 server:
   port: 7001 #服务端口
 eureka:
-  instance:
-    hostname: server1 #唯一标识,不能和集群中其他的一样
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
