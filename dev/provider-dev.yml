@@ -1,6 +1,2 @@
 server:
   port: 8001 #服务端口
-eureka:
-  instance:
-    instance-id: provider
-    prefer-ip-address: true     #访问路径可以显示IP地址
