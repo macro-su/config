@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zuul #服务应用名称
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_DEFAULT_ZONE:http://localhost:7001/eureka/}
+  instance:
+    instance-id: ${spring.application.name}:${random.value}
+    prefer-ip-address: true #访问路径可以显示IP地址
