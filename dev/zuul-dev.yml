@@ -5,7 +5,9 @@ zuul:
   routes:
     api-consumer:
       path: /api-consumer/*
+      stripPrefix: false
       serviceId: consumer
     api-provider:
       path: /api-provider/*
+      stripPrefix: false
       serviceId: provider
