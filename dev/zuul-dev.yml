@@ -4,10 +4,10 @@ zuul:
   ignoredServices: '*' # 防止自动添加服务，匹配到这里的在路由映射中明确指定了，那么它就不会被忽略
   routes:
     api-consumer:
-      path: /api-consumer/*
+      path: /api-consumer/**
       stripPrefix: false
       serviceId: consumer
     api-provider:
-      path: /api-provider/*
+      path: /api-provider/**
       stripPrefix: false
       serviceId: provider
