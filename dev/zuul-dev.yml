@@ -1,5 +1,8 @@
 server:
   port: 5001 #服务端口
+spring:
+  zipkin:
+    base-url: ${zipkin-url:http://localhost:9411}
 zuul:
   ignoredServices: '*' # 防止自动添加服务，匹配到这里的在路由映射中明确指定了，那么它就不会被忽略
   routes:
